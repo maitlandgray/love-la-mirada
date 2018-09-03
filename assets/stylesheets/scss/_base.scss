@@ -1,0 +1,116 @@
+/* Text Styles */
+h1 {
+  margin: 0 0 20px;
+  font-family: $montserrat;
+  font-weight: 500;
+  font-size: 32px;
+}
+h2 {
+  margin: 25px 0 20px;
+  font-family: $montserrat;
+  font-weight: 500;
+  font-size: 25px;
+}
+h3 {
+  margin: 0 0 20px;
+  font-family: $montserrat;
+  font-weight: 500;
+  font-size: 20px;
+}
+p {
+  margin: 15px 0;
+  font-family: $roboto;
+  font-size: 16px;
+  line-height: 24px;
+}
+strong {
+  font-weight: 500;
+}
+a {
+  text-decoration: underline;
+}
+.page-updated-text {
+  font-size: 13px;
+  font-style: italic;
+  color: #BBB;
+  margin: -5px 0 5px;
+}
+
+/* Segment Styles */
+.page-segment {
+  padding: 40px 0;
+}
+.center { text-align: center; }
+
+/* Margin Styles */
+.mb-0 { margin-bottom: 0; }
+.mb-20 { margin-bottom: 20px; }
+
+/* Buttons */
+.btn-float li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.btn-float li:first-child { margin-left: 0; }
+.btn-float li:last-child { margin-right: 0; }
+
+/* Images */
+.max-width { max-width: 100%; }
+
+/* Banners */
+.banner {
+  @include screen-sm-min { padding: 0 15px; }
+  .banner_image {
+    margin-top: -25px;
+    float: left;
+    @include screen-sm-min { 
+      margin-top: 15px;
+      float: initial;
+      display: block;
+    }
+  }
+}
+
+/* Sponsors */
+.sponsors img {
+  float: left;
+  margin: 0 30px 30px 0;
+}
+
+.sponsors.silver img {
+  max-height: 80px;
+}
+
+/* Icons and Text */
+.icon-text {
+  padding: 5px 0 0;
+  li:first-child {
+    padding-right: 3px;
+  }
+  li {
+    display: inline-block;
+    i {
+      color: $mirada-red;
+      font-size: 14px;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
+/* Tables */
+table {
+  width: 100%;
+  tbody tr td {
+    border: 1px solid #CCC;
+    padding: 0 20px;
+    .table_list-item {
+      border-bottom: 1px solid #CCC;
+    }
+    .table_list-item:last-child {
+      border-bottom: none;
+    }
+  }
+}

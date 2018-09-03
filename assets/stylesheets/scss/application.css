@@ -1,0 +1,187 @@
+.btn-red {
+  background-color: #C1272C;
+  border: 1px solid #C1272C; }
+
+nav {
+  background-color: #C1272C;
+  height: 65px; }
+  nav .nav_logo {
+    float: left;
+    margin: 15px 0 0 15px;
+    position: relative;
+    z-index: 20; }
+    nav .nav_logo img {
+      width: 85px; }
+  nav .nav_main {
+    float: right;
+    width: 100%;
+    margin: -77px 0 0 0;
+    position: relative;
+    z-index: 10;
+    border: none; }
+    nav .nav_main .navbar-toggle {
+      margin: -15px 15px 0 0;
+      border: 1px solid #FFF; }
+      nav .nav_main .navbar-toggle .icon-bar {
+        background-color: #FFF; }
+    nav .nav_main #nav {
+      background-color: #333;
+      border: none;
+      width: 100%;
+      margin: 15px -30px 0 0;
+      padding: 0;
+      text-align: right; }
+      nav .nav_main #nav .navbar-nav {
+        margin: 0;
+        padding: 15px 0; }
+        nav .nav_main #nav .navbar-nav li a {
+          font-family: Montserrat, Helvetica, Arial, sans-serif;
+          font-size: 15px;
+          color: #FFF; }
+        nav .nav_main #nav .navbar-nav li a:hover {
+          background-color: #333; }
+        nav .nav_main #nav .navbar-nav .dropdown-menu {
+          text-align: right; }
+          nav .nav_main #nav .navbar-nav .dropdown-menu li {
+            padding: 5px 0; }
+            nav .nav_main #nav .navbar-nav .dropdown-menu li a {
+              color: #777; }
+      nav .nav_main #nav .nav_cta {
+        float: right;
+        padding: 0;
+        margin: 0 0 15px; }
+        nav .nav_main #nav .nav_cta li {
+          width: 120px;
+          margin: 0 15px 15px 0;
+          text-align: center;
+          border: 1px solid #FFF;
+          border-radius: 4px; }
+      nav .nav_main #nav .nav .open > a, nav .nav_main #nav .nav .open > a:focus, nav .nav_main #nav .nav .open > a:hover, nav .nav_main #nav .nav > li > a:focus, nav .nav_main #nav .nav > li > a:hover {
+        background-color: #333; }
+
+@media screen and (min-width: 768px) {
+  nav {
+    background-color: #FFF;
+    height: 52px; }
+    nav > div {
+      width: 750px;
+      margin: 0 auto; }
+    nav .nav_logo {
+      float: left;
+      margin: 15px 0 0;
+      position: relative;
+      z-index: 20; }
+      nav .nav_logo img {
+        width: 105px; }
+    nav .nav_main {
+      float: right;
+      width: 620px;
+      margin: 0;
+      position: relative;
+      z-index: 10; }
+      nav .nav_main #nav {
+        border: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 100px;
+        background-color: #FFF; }
+        nav .nav_main #nav .caret {
+          display: none; }
+        nav .nav_main #nav .nav_main_items {
+          margin: 0;
+          padding: 0; }
+          nav .nav_main #nav .nav_main_items > li {
+            margin: 20px 20px 0 0; }
+            nav .nav_main #nav .nav_main_items > li a {
+              padding: 0;
+              font-family: Montserrat, Helvetica, Arial, sans-serif;
+              font-weight: 400;
+              font-size: 15px;
+              color: #222;
+              border-bottom: 3px solid #FFF;
+              padding-bottom: 3px; }
+          nav .nav_main #nav .nav_main_items .active a {
+            border-bottom: 3px solid #333;
+            font-weight: 500; }
+          nav .nav_main #nav .nav_main_items li a:hover {
+            background-color: #FFF;
+            padding-bottom: 3px;
+            border-bottom: 3px solid #333; }
+            nav .nav_main #nav .nav_main_items li a:hover .dropdown-menu {
+              display: block; }
+          nav .nav_main #nav .nav_main_items .dropdown-menu {
+            text-align: left;
+            padding: 10px 0;
+            margin: 10px 0 0;
+            box-shadow: none; }
+            nav .nav_main #nav .nav_main_items .dropdown-menu li {
+              padding: 5px 20px 5px 15px; }
+              nav .nav_main #nav .nav_main_items .dropdown-menu li a {
+                color: #333;
+                display: inline-block; }
+        nav .nav_main #nav .nav_main_items .open > a, nav .nav_main #nav .nav_main_items .open > a:focus, nav .nav_main #nav .nav_main_items .open > a:hover, nav .nav_main #nav .nav_main_items > li > a:focus, nav .nav_main #nav .nav_main_items > li > a:hover {
+          background-color: #FFF; }
+        nav .nav_main #nav .nav_cta {
+          float: right;
+          padding: 0;
+          margin: 0; }
+          nav .nav_main #nav .nav_cta li {
+            width: initial;
+            margin: 15px 0 0 15px;
+            text-align: center; }
+          nav .nav_main #nav .nav_cta li:nth-child(1) a {
+            padding: 5px 15px;
+            background-color: #C1272C;
+            border-radius: 4px; }
+          nav .nav_main #nav .nav_cta li:nth-child(1) a:hover {
+            background-color: #A0242C; }
+          nav .nav_main #nav .nav_cta li:nth-child(2) a {
+            padding: 5px 15px;
+            background-color: #333;
+            border-radius: 4px; }
+          nav .nav_main #nav .nav_cta li:nth-child(2) a:hover {
+            background-color: #777; }
+          nav .nav_main #nav .nav_cta li a {
+            color: #FFF;
+            padding: 0; }
+          nav .nav_main #nav .nav_cta li a:hover {
+            background-color: initial; } }
+
+@media screen and (min-width: 992px) {
+  nav > div {
+    width: 940px; }
+    nav > div .nav_main {
+      width: 810px; } }
+
+@media screen and (min-width: 1200px) {
+  nav > div {
+    width: 1140px; }
+    nav > div .nav_main {
+      width: 1010px; } }
+
+#breadcrumbs div {
+  margin: 11px 0 0;
+  padding: 10px 0 12px;
+  background-color: #C1272C; }
+  #breadcrumbs div ul {
+    display: block;
+    margin: 0;
+    list-style: none; }
+    #breadcrumbs div ul li {
+      display: inline-block;
+      color: #FFF; }
+      #breadcrumbs div ul li p {
+        margin: 0;
+        font-family: Montserrat, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 13px; }
+      #breadcrumbs div ul li a {
+        color: #FFF; }
+      #breadcrumbs div ul li a:hover {
+        color: #333;
+        text-decoration: none; }
+    #breadcrumbs div ul .breadcrumbs_icon {
+      margin-left: 25px; }
+    #breadcrumbs div ul .breadcrumbs_seperator {
+      padding: 0 4px; }

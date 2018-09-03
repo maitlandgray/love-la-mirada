@@ -1,0 +1,492 @@
+<?php $project_1 ="20"; ?>
+<?php $project_2 ="20"; ?>
+<?php $project_3 ="10"; ?>
+<?php $project_4 ="20"; ?>
+<?php $project_5 ="6"; ?>
+<?php $project_6 ="12"; ?>
+<?php $project_7 ="8"; ?>
+<?php $project_8 ="4"; ?>
+<?php $project_9 ="20"; ?>
+<?php $project_10 ="15"; ?>
+<?php $project_11 ="8"; ?>
+<?php $project_12 ="6"; ?>
+<?php $project_13 ="4"; ?>
+<?php $project_14 ="4"; ?>
+<?php $project_15 ="4"; ?>
+<?php $project_16 ="4"; ?>
+<?php $project_17 ="2"; ?>
+<?php $project_18 ="10"; ?>
+<?php $project_19 ="10"; ?>
+<?php $project_20 ="10"; ?>
+<?php $project_21 ="10"; ?>
+<?php $project_22 ="20"; ?>
+<?php $project_23 ="20"; ?>
+<?php $project_24 ="20"; ?>
+<?php $project_25 ="15"; ?>
+<?php $project_26 ="4"; ?>
+<?php $project_27 ="4"; ?>
+<?php $project_28 ="6"; ?>
+<?php $project_29 ="15"; ?>
+<?php $project_30 ="20"; ?>
+<?php $project_31 ="12"; ?>
+<?php $project_32 ="12"; ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title><?php echo $page_title; ?></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/css/application.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon/favicon.ico"/>
+  
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,500,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  
+  <!-- Add jQuery library -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+  <!-- Bootstrap Javascript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/javascripts/bootstrap-hover-dropdown.min.js"></script>
+
+  <!-- Axios Javascript -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+
+<nav>
+  <div>
+    <div class="nav_logo">
+      <a href="#"><img src="assets/images/logo.png" alt="Love La Mirada"></a>
+    </div>
+    <div class="nav_main navbar">
+      <div class="">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="nav navbar-nav nav_main_items">
+            <li class="<?php echo ($page == 'about' ? 'active' : '')?> active"><a href="#">About</a></li>
+            <li class="dropdown <?php echo ($page == 'events' ? 'active' : '')?>">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle" data-hover="dropdown" data-delay="100" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
+              <!--<ul class="dropdown-menu">
+                <li><a tabindex="-1" href="#">Day of Service</a></li>
+                <li><a tabindex="-1" href="#">Mini Day of Service</a></li>
+                <li><a tabindex="-1" href="#">Past Events</a></li>
+              </ul>-->
+            </li>
+            <li class="<?php echo ($page == 'sponsors' ? 'active' : '')?>"><a href="#">Sponsors</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right nav_cta">
+            <li><a href="#">Volunteer</a></li>
+            <li><a href="https://tithe.ly/give_new/www/#/tithely/give-one-time/93219">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<div id="breadcrumbs">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <ul>
+          <li class="breadcrumbs_icon"><a href="#"><i class="fa fa-home"></i></a></li>
+          <li class="breadcrumbs_seperator"><p>—</p></li>
+          <li class="breadcrumbs_location"><p><a href="#">Page</a></p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container banner">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="banner_image">
+        <img class="max-width" src="https://www.placehold.it/1140x300" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container black-bar">
+  <div>
+    <div class="row">
+      <div class="col-sm-12 center">
+        <ul class="btn-float">
+          <li><p><a class="btn btn-red" href="https://youtu.be/tWjmxIphqC8">Watch 2016 Video</a></p>
+          <li><p><a class="btn btn-red" href="http://goo.gl/forms/XyHca7Xmw4">Become a Sponsor</a></p>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-segment">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-11">
+        <h1>About Love La Mirada</h1>
+        <p>Inspired by the <a href="#">Love Our Cities</a> movement started in Modesto, California, Love La Mirada began with the support of a dozen local church leaders who met together to consider how they might challenge their congregations to partner with other organizations and residents of La Mirada for the good of our city. Others joined together to form a team to start up an official organization dedicated to helping people discover more about our city, serve together to improve our neighborhoods, and connect with other residents of La Mirada into greater community.</p>
+        <p><a class="btn btn-red" href="#">Learn More</a></p>
+        <p>Inspired by the <a href="#">Love Our Cities</a> movement started in Modesto, California, Love La Mirada began with the support of a dozen local church leaders who met together to consider how they might challenge their congregations to partner with other organizations and residents of La Mirada for the good of our city. Others joined together to form a team to start up an official organization dedicated to helping people discover more about our city, serve together to improve our neighborhoods, and connect with other residents of La Mirada into greater community.</p>
+        <h2>Love La Mirada Board of Directors</h2>
+        <p><strong>Misty Cota</strong>: Local Realtor with Keller Williams &amp; Member of La Mirada Foursquare Church</p>
+        <p><strong>Misty Cota</strong>: Local Realtor with Keller Williams &amp; Member of La Mirada Foursquare Church</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card-list">
+        <div class="col-sm-4">
+          
+          <div class="card">
+            <h3>Day of Service</h3>
+            <img src="https://via.placeholder.com/358x207" alt="">
+            <div class="card_details">
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-calendar"></i></li>
+                <li><p>March 25, 2018</p></li>
+              </ul>
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-clock-o"></i></li>
+                <li><p>9 a.m.–12 p.m.</p></li>
+              </ul>
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-smile-o"></i></li>
+                <li><p>All Ages</p></li>
+              </ul>
+            </div>
+            <div class="card_note">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum erat a vehicula pharetra.</p>
+            </div>
+            <div class="card_cta">
+              <ul class="btn-float">
+                <li><a href="" class="btn btn-red">Learn More</a></li>
+                <li><a href="" class="btn btn-red">Choose A Project</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          
+          <div class="card">
+            <h3><a href="">Mini-Day of Service</a></h3>
+            <img src="https://via.placeholder.com/358x207" alt="">
+            <div class="card_details">
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-calendar"></i></li>
+                <li><p>January 1, 2018</p></li>
+              </ul>
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-clock-o"></i></li>
+                <li><p>9 a.m.–12 p.m.</p></li>
+              </ul>
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-smile-o"></i></li>
+                <li><p>All ages welcome</p></li>
+              </ul>
+            </div>
+            <div class="card_note">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum erat a vehicula pharetra.</p>
+            </div>
+            <div class="card_cta">
+              <ul class="btn-float">
+                <li><a href="" class="btn btn-red">Learn More</a></li>
+                <li><a href="" class="btn btn-red">Choose A Project</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          
+          <div class="card">
+            <h3>Past Events</h3>
+            <img src="https://via.placeholder.com/358x207" alt="">
+            <div class="card_cta">
+              <ul class="btn-float">
+                <li><a href="" class="btn btn-black">View Past Events</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card-list">
+        <div class="col-sm-6 col-md-4">
+          
+          <div class="card">
+            <h3>Painting at Anna J. Martin Park</h3>
+            <div class="card_details">
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-fw fa-map-marker"></i></li>
+                <li><p><a href="https://goo.gl/maps/HPC14ZjAqCw">Anna J. Martin Park</a></p></li>
+              </ul>
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-fw fa-user"></i></li>
+                <li><p><?php echo $project_1; ?> Spots Remaining</p></li>
+              </ul>
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-fw fa-smile-o"></i></li>
+                <li><p>13+</p></li>
+              </ul>
+            </div>
+            <div class="card_cta">
+              <ul class="btn-float">
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSckWcZSzpd2DXKUADSJuXyFzKSc3o92tULQFPrp1KbvrEowiw/viewform?usp=pp_url&entry.2127020412&entry.440028105&entry.2095971753&entry.1288831461&entry.78660128=Yes&entry.1144561299=Painting+at+Anna+J.+Martin+Park&entry.858682923&entry.1152233354&entry.1166218141&entry.656075274&entry.1543478862&entry.715689371&entry.906767719&entry.2094942750&entry.1822220013&entry.1090531317&entry.1235405773&entry.112533962&entry.1759232069&entry.1613532672&entry.944824448&entry.253764604&entry.145122026&entry.1085969806&entry.1592547084&entry.2127321299&entry.2018323156&entry.1926004774&entry.1475002647&entry.1629797582&entry.260693560&entry.155165137&entry.1446818106" class="btn btn-red">Volunteer for Project</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Project 1111: ProjectName -->
+          <div class="card">
+            <h3>ProjectName</h3>
+            <div class="card_details">
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-fw fa-map-marker"></i></li>
+                <li><p><a href="googlemapslocation" target="_blank">ProjectLocation</a></p></li>
+              </ul>
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-fw fa-user"></i></li>
+                <li><p><?php echo $project_3; ?> Spots Remaining</p></li>
+              </ul>
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-fw fa-smile-o"></i></li>
+                <li><p>13+</p></li>
+              </ul>
+            </div>
+            <div class="card_cta">
+              <ul class="btn-float">
+                <li><a href="googleformlink" target="_blank" class="btn btn-red">Volunteer for Project</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Park Clean-up at Creek Park</h3>
+            <div class="card_details">
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-fw fa-map-marker"></i></li>
+                <li><p><a href="https://goo.gl/maps/uJuff74rTky">Creek Park</a></p></li>
+              </ul>
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-fw fa-user"></i></li>
+                <li><p><?php echo $project_2; ?> Spots Remaining</p></li>
+              </ul>
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-fw fa-smile-o"></i></li>
+                <li><p>13+</p></li>
+              </ul>
+            </div>
+            <div class="card_cta">
+              <ul class="btn-float">
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSckWcZSzpd2DXKUADSJuXyFzKSc3o92tULQFPrp1KbvrEowiw/viewform?usp=pp_url&entry.2127020412&entry.440028105&entry.2095971753&entry.1288831461&entry.78660128=Yes&entry.1144561299=Park+Clean-up+at+Creek+Park&entry.858682923&entry.1152233354&entry.1166218141&entry.656075274&entry.1543478862&entry.715689371&entry.906767719&entry.2094942750&entry.1822220013&entry.1090531317&entry.1235405773&entry.112533962&entry.1759232069&entry.1613532672&entry.944824448&entry.253764604&entry.145122026&entry.1085969806&entry.1592547084&entry.2127321299&entry.2018323156&entry.1926004774&entry.1475002647&entry.1629797582&entry.260693560&entry.155165137&entry.1446818106" class="btn btn-red">Volunteer for Project</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>ProjectName</h3>
+            <div class="card_details">
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-fw fa-map-marker"></i></li>
+                <li><p><a href="ProjectLocation">ProjectLocation</a></p></li>
+              </ul>
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-fw fa-user"></i></li>
+                <li><p><?php echo $project_1; ?> Spots Remaining</p></li>
+              </ul>
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-fw fa-smile-o"></i></li>
+                <li><p>AllAges</p></li>
+              </ul>
+            </div>
+            <div class="card_cta">
+              <ul class="btn-float">
+                <li><a href="" class="btn btn-red">Volunteer for Project</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="col-sm-6 col-md-4">
+          
+          <div class="card">
+            <h3>Project Name</h3>
+            <div class="card_details">
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-map-marker"></i></li>
+                <li><p><a href="">Project Location</a></p></li>
+              </ul>
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-user"></i></li>
+                <li><p>12 Spots Remaining</p></li>
+              </ul>
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-smile-o"></i></li>
+                <li><p>All Ages</p></li>
+              </ul>
+            </div>
+            <div class="card_note">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum erat a vehicula pharetra.</p>
+            </div>
+            <div class="card_cta">
+              <ul class="btn-float">
+                <li><a href="" class="btn btn-red">Volunteer for Project</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          
+          <div class="card">
+            <h3>Project Name</h3>
+            <div class="card_details">
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-map-marker"></i></li>
+                <li><p><a href="">Project Location</a></p></li>
+              </ul>
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-user"></i></li>
+                <li><p>12 Spots Remaining</p></li>
+              </ul>
+              <ul class="card_details-item icon-text">
+                <li><i class="fa fa-smile-o"></i></li>
+                <li><p>All Ages</p></li>
+              </ul>
+            </div>
+            <div class="card_note">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum erat a vehicula pharetra.</p>
+            </div>
+            <div class="card_cta">
+              <ul class="btn-float">
+                <li><a href="" class="btn btn-red">Volunteer for Project</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <table>
+          <tbody>
+            <tr>
+              <td align="center" width="118"><p><strong>8:00 a.m.</strong></p></td>
+              <td>
+                <div class="table_list-item">
+                  <p class="mb-0"><strong>Arrive at our Love La Mirada Launch Rally</strong></p>
+                  <ul class="icon-text mb-20">
+                    <li><i class="fa fa-map-marker"></i></li>
+                    <li><p><a href="">Heights Christian Elementary School</a></p></li>
+                  </ul>
+                </div>
+                <div class="table_list-item">
+                  <p><strong>Sign in and finalize event registration</strong>
+                    <br>Pick up wristband and FREE Love La Mirada t-shirt</p>
+                </div>
+                <div class="table_list-item">
+                  <p><strong>Meet Project Coordinator and the rest of your team members</strong>
+                    <br>The Project Coordinator will update the team with any additional details if there are any changes</p>
+                </div>
+                <div class="table_list-item">
+                  <p><strong>Go work on the project</strong></p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" width="118"><p><strong>12:00 p.m.</strong></p></td>
+              <td><p><strong>Return to our Love La Mirada Launch Rally Location</strong>
+                <br>Enjoy a thank-you lunch and time of celebration for completing the Day of Service</p></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  <div class="social">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <ul>
+            <li class="social_icon">
+              <a href="https://twitter.com/LoveLaMirada">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="social_icon">
+              <a href="https://www.facebook.com/lovelamirada/">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="social_icon">
+              <a href="https://www.instagram.com/lovelamirada/">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mission">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p>Bringing churches, schools, city government, businesses, non-profits, and residents together for the good of our city.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p>Copyright &copy; 2018 Love La Mirada</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

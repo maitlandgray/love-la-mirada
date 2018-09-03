@@ -1,0 +1,39 @@
+<nav>
+  <div>
+    <div class="nav_logo">
+      <a href="https://www.lovelamirada.org"><img src="https://www.lovelamirada.org/assets/images/logo.png" alt="Love La Mirada"></a>
+    </div>
+    <div class="nav_main navbar">
+      <div class="">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="nav navbar-nav nav_main_items">
+            <li class="<?php echo ($page == 'about' ? 'active' : '')?>"><a href="https://www.lovelamirada.org/about/">About</a></li>
+            <li class="dropdown <?php echo ($page == 'events' ? 'active' : '')?>">
+              <a data-toggle="dropdown" class="dropdown-toggle disabled" href="https://www.lovelamirada.org/events" data-hover="dropdown" data-delay="100" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="https://www.lovelamirada.org/events/service">Day of Service</a></li>
+                <!--
+                <li><a tabindex="-1" href="https://www.lovelamirada.org/events/">Mini Day of Service</a></li>
+                <li><a tabindex="-1" href="https://www.lovelamirada.org/events/">Past Events</a></li>-->
+              </ul>
+            </li>
+            <li class="<?php echo ($page == 'sponsors' ? 'active' : '')?>"><a href="https://www.lovelamirada.org/sponsors/">Sponsors</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right nav_cta">
+            <li><a href="https://www.lovelamirada.org/events/service/projects">Volunteer</a></li>
+            <li><a href="https://tithe.ly/give?c=242946" target="_blank">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

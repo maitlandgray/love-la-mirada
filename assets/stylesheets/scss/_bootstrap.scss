@@ -1,0 +1,26 @@
+.btn { padding: 7px 15px 6px; }
+.btn-red {
+  background-color: $mirada-red;
+  border: none;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: $roboto;
+  color: #FFF;
+}
+.btn-red:hover { 
+  background-color: $dark-mirada-red;
+  color: #FFF;
+}
+.btn-black {
+  background-color: $dark-gray;
+  border: none;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: $roboto;
+  color: #FFF;
+}
+.btn-black:hover { 
+  background-color: $dark-gray-highlight;
+  color: #FFF;
+}
+.btn:focus { color: #FFF; }

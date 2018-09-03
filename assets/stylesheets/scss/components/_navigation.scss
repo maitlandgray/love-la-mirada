@@ -1,0 +1,195 @@
+nav {
+  background-color: $mirada-red;
+  height: 65px;
+  padding: 0;
+  .nav_logo {
+    float: left;
+    margin: 15px 0 0 15px;
+    position: relative;
+    z-index: 20;
+    img { width: 85px; }
+  }
+  .nav_main {
+    float: right;
+    width: 100%;
+    margin: -77px 0 0 0;
+    position: relative;
+    z-index: 10;
+    border: none;
+    .navbar-toggle {
+      margin: -15px 15px 0 0;
+      border: 1px solid #FFF;
+      .icon-bar { background-color: #FFF; }
+    }
+    #nav {
+      background-color: $dark-gray;
+      border: none;
+      width: 100%;
+      margin: 15px -30px 0 0;
+      padding: 0;
+      text-align: right;
+      .navbar-nav {
+        margin: 0;
+        padding: 15px 0;
+        li a {
+          font-family: $roboto;
+          font-size: 15px;
+          color: #FFF;
+          text-decoration: none;
+        }
+        li a:hover {
+          background-color: $dark-gray;
+        }
+        .dropdown-menu { 
+          text-align: right;
+          li { 
+            padding: 5px 0;
+            a { color: $dark-gray-highlight; }
+          }
+        }
+      }
+      .nav_cta {
+        float: right;
+        padding: 0;
+        margin: 0 0 15px;
+        li {
+          width: 120px;
+          margin: 0 15px 15px 0;
+          text-align: center;
+          border: 1px solid #FFF;
+          border-radius: 4px;
+        }
+      }
+      .nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .nav>li>a:focus, .nav>li>a:hover { background-color: $dark-gray; }
+    }
+  }
+}
+
+@include screen-sm-min {
+  nav {
+    background-color: #FFF;
+    height: 52px;
+    > div { 
+      width: 720px;
+      margin: 0 auto;
+      padding: 0 0 0 40px;
+    }
+    .nav_logo {
+      float: initial;
+      display: inline;
+      margin: 15px 0 0;
+      img { 
+        width: 105px;
+        padding: 12px 0 0;
+      }
+    }
+    .nav_main {
+      float: right;
+      width: 550px;
+      margin: 0;
+      position: relative;
+      z-index: 10;
+      #nav {
+        border: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 100px;
+        background-color: #FFF;
+        .caret { display: none; }
+        .nav_main_items {
+          margin: 0;
+          padding: 0;
+          > li {
+            margin: 20px 20px 0 0;
+            a {
+              padding: 0;
+              font-family: $montserrat;
+              font-weight: 400;
+              font-size: 15px;
+              color: #222;
+              border-bottom: 3px solid #FFF;
+              padding-bottom: 3px;
+              text-decoration: none;
+            }
+          }
+          .active > a {
+            border-bottom: 3px solid $dark-gray;
+            font-weight: 500;
+          }
+          li a:hover {
+            background-color: #FFF;
+            padding-bottom: 3px;
+            border-bottom: 3px solid $dark-gray;
+            .dropdown-menu { display: block; }
+          }
+          .dropdown-menu { 
+            text-align: left;
+            padding: 10px 0;
+            margin: 10px 0 0;
+            box-shadow: none;
+            li { 
+              padding: 5px 20px 5px 15px;
+              a { 
+                color: $dark-gray;
+                display: inline-block;
+              }
+            }
+          }
+        }
+        .nav_main_items .open>a, .nav_main_items .open>a:focus, .nav_main_items .open>a:hover, .nav_main_items>li>a:focus, .nav_main_items>li>a:hover { background-color: #FFF; }
+        .nav_cta {
+          float: right;
+          padding: 0;
+          margin: 0;
+          li {
+            width: initial;
+            margin: 15px 0 0 15px;
+            text-align: center;
+          }
+          li:nth-child(1) a {
+            padding: 6px 15px 5px;
+            background-color: $mirada-red;
+            border-radius: 4px;
+          }
+          li:nth-child(1) a:hover {
+            background-color: $dark-mirada-red;
+          }
+          li:nth-child(2) a {
+            padding: 6px 15px 5px;
+            background-color: $dark-gray;
+            border-radius: 4px;
+          }
+          li:nth-child(2) a:hover {
+            background-color: $dark-gray-highlight;
+          }
+          li a {
+            color: #FFF;
+            padding: 0;
+          }
+          li a:hover {
+            background-color: initial;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include screen-md-min {
+  nav > div { 
+    width: 940px;
+    .nav_main {
+      width: 770px;
+    }
+  }
+}
+
+@include screen-lg-min {
+  nav > div { 
+    width: 1140px;
+    .nav_main {
+      width: 970px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+#footer {
+  p { text-align: center; }
+  .social {
+    text-align: center;
+    margin-bottom: 20px;
+    .social_icon {
+      display: inline-block;
+      a { color: $mirada-red; }
+      a:hover { color: $dark-mirada-red; }
+    }
+  }
+  .mission {
+    background-color: $mirada-red;
+    p {
+      margin: 0;
+      padding: 30px 15px;
+      color: #FFF;
+      font-family: $helvetica;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+  .copyright {
+    background-color: $dark-gray;
+    p {
+      margin: 0;
+      padding: 15px;
+      color: #FFF;
+      font-family: $helvetica;
+      font-weight: 300;
+      font-size: 12px;
+    }
+  }
+}

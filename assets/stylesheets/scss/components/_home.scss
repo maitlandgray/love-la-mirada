@@ -1,0 +1,17 @@
+.home {
+  @include screen-sm-min {
+    .banner_image {
+      border-top: 4px solid #C12;
+      padding: 20px 0 0;
+    }
+  }
+}
+
+.black-bar { 
+  @include screen-sm-min { padding: 0 15px; }
+  > div {
+    background-color: #222;
+    margin: 20px 0;
+    .btn-float { margin: 15px 10px; }
+  }
+}

@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.lovelamirada\.org$ [NC]
+RewriteRule ^(.*)$ https://www.lovelamirada.org/$1 [R=301,L]
